@@ -25,6 +25,10 @@ To use Syslogger in console output mode, follow these steps:
 5. Once connected, you will start receiving log entries from /var/log/syslog in real-time via the telnet connection.
 
 ## Example
+
+![syslog](https://github.com/vitluchko/SysLog/assets/98816838/5c000781-f426-4940-b4e8-e1efd88875fb)
+
+
 - Start Syslogger in TCP socket mode:
  
 <b>  ./syslogger -t 1337</b>
@@ -38,5 +42,3 @@ To use Syslogger in console output mode, follow these steps:
 ## Notes
 - In TCP socket mode, you can connect to Syslogger using any telnet client (e.g., telnet command or a telnet client application).
 - To stop Syslogger, simply press Ctrl+C in the terminal where it is running.
-
-![syslog](https://github.com/vitluchko/SysLog/assets/98816838/1f2dfbb3-61ee-41a5-8abb-3415423b8154)
