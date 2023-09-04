@@ -8,4 +8,5 @@ WORKDIR /home/appetitus/CLionProjects/Task/
 
 RUN g++ -o syslogger main.cpp ServerSocket.cpp ClientHandler.cpp
 
+#CMD ["./syslogger"]
 CMD ["./syslogger", "127.0.0.1", "1337"]
