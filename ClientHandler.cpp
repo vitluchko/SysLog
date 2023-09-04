@@ -29,7 +29,7 @@ void ClientHandler::handleClient() const {
     //Process client messages
     processClientMessages();
 
-    close(clientSocket);
+    //close(clientSocket);
 }
 
 void ClientHandler::processClientMessages() const {
