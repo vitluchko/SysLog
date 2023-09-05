@@ -1,12 +1,16 @@
-FROM gcc:latest
+FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y g++
+WORKDIR /skylog
 
-COPY . /home/appetitus/CLionProjects/Task/
+RUN apt-get update && \
+    apt-get install -y \
+    g++ \
+    cmake \
+    make
 
-WORKDIR /home/appetitus/CLionProjects/Task/
+COPY . /skylog
 
-RUN g++ -o syslogger main.cpp ServerSocket.cpp ClientHandler.cpp
+RUN cmake . && \
+    make
 
-#CMD ["./syslogger"]
-CMD ["./syslogger", "127.0.0.1", "1337"]
+CMD ["./sylogger"]
