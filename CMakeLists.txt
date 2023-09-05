@@ -8,4 +8,5 @@ add_executable(Task main.cpp
         ServerSocket.h
         ClientHandler.cpp
         ClientHandler.h
+        main.cpp
 )
