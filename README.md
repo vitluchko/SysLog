@@ -12,7 +12,7 @@ To use Syslogger in console output mode, follow these steps:
 
 2. Run Syslogger to monitor a log file (e.g., `/var/log/syslog`):
    
-  <b> ./syslog</b>
+  <b> ./Task</b>
 
 
 3. Syslogger will start listening on the specified port for incoming telnet connections.
